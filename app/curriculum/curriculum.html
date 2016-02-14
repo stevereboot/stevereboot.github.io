@@ -1,0 +1,11 @@
+<div ng-include src="'app/nav/nav.html'"></div>
+<div class="container">
+	<div class="row">
+		<div class="menu col-sm-3">
+			<ul ng-bind-html="curriculum.menu" compile-template></ul>
+		</div>
+	    <div class="col-sm-9 col-sm-offset-3">
+			<div ng-bind-html="curriculum.content" class="content"></div>
+		</div> <!-- /.col-sm-9 col-md-10 -->
+	</div> <!-- /.row -->
+</div><!-- /.container -->

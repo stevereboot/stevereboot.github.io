@@ -1,3 +1,126 @@
 body {
 	padding-top: 50px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+	font-size: 16px;
+}
+
+/* Fix brand logo to match menu position */
+@media (min-width: 768px) {
+	.navbar-brand {
+		position: fixed;
+		left: 0;
+		padding-left: 60px;
 	}
+}
+
+.navbar-brand {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+/* Curriculum side panel */
+
+/* Hide for mobile */
+.menu {
+	display: none;
+}
+
+/* Show for tablet or larger */
+@media (min-width: 768px) {
+	.menu {
+		position: fixed;
+		top: 50px;
+		bottom: 0;
+		left: 0;
+		z-index: 1000;
+		display: block;
+		padding: 20px 20px 20px 45px;
+		overflow-x: hidden;
+		overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+		border-right: 1px solid #dfe2e7;
+		width: 200px;
+	}
+}
+
+/* Wider menu for larger */
+@media (min-width: 992px) {
+	.menu {
+		width: 250px;
+	}
+}
+
+/* Even wider menu for full size */
+@media (min-width: 1200px) {
+	.menu {
+		width: 300px;
+	}
+}
+
+.menu ul, .menu li {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu a {
+    color: #606060;
+	display: block;
+	padding: 1px 0;
+	font-size: 16px;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.menu a.level-1,
+.menu a.level-2,
+.menu a.level-3 {
+  margin: 5px 0;
+}
+
+.menu a.level-2,
+.menu a.level-3 {
+  padding-left: 10px;
+}
+
+
+
+
+
+/* Curriculum content */
+.content {
+	font-size: 16px;
+	// color: #606060;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+	margin-top: -50px;
+}
+
+.content h1,
+.content h2 {
+	padding-top: 75px;
+}
+
+.content h3,
+.content h4,
+.content h5 {
+	padding-top: 50px;
+}
+
+/* Override HighlightJS theme background color */
+.hljs {
+	background-color: #272822;
+	font-size: 14px;
+}
